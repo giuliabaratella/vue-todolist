@@ -30,9 +30,10 @@ createApp({
         }
     },
     methods: {
-
+        removeTask(i){
+            this.tasks.splice(i,1);
+        }
     }
 }).mount('#app')
 
-// Stampare all'interno di una lista HTML un item per ogni todo.
-// Se la proprietà `done` è uguale a `true`, visualizzare il testo del todo ~~sbarrato~~.
+// Visualizzare a fianco ad ogni item ha una "x": cliccando su di essa, il todo viene rimosso dalla lista.

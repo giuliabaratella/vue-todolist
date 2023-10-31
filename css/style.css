@@ -21,6 +21,14 @@ header h1 {
 .fa-circle-xmark {
     color: var(--primary-color);
 }
+.todo-remove, .todo-text{
+    cursor: pointer;
+}
 .done {
     text-decoration: line-through;
+}
+.msg {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3em;
+    color: var(--secondary-color);
 }
