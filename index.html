@@ -16,8 +16,12 @@
         <div class="container">
             <header class="text-center py-5">
                 <h1>Halloween To Do List</h1>
+                <div class="d-flex justify-content-center column-gap-3 align-content-center align-items-center">
+                    <input type="text" class="form-control w-75" v-model="newText">
+                    <button class="btn text-uppercase fw-bold" @click="addTask">Add new task</button>
+                </div>
             </header>
-            <main class="py-5">
+            <main class="pb-5">
                 <div class="card" v-if="tasks.length > 0">
                     <ul class="list-group">
                       <li v-for="(task,index) in tasks" class="list-group-item list-group-item-action d-flex justify-content-between">
