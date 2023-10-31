@@ -5,6 +5,7 @@
 body {
     background-image: url(../img/halloween-pattern.jpg);
     background-repeat: repeat;
+    font-family: 'Playpen Sans', cursive;
 }
 .container {
     background-color: rgba(255, 255, 255, 0.8);
@@ -17,6 +18,10 @@ header h1 {
 }
 .fa-circle-xmark {
     color: var(--primary-color);
+    font-size: 2em;
+}
+.fa-circle-xmark:hover {
+    color: var(--secondary-color);
 }
 .todo-remove, .todo-text{
     cursor: pointer;
@@ -33,5 +38,6 @@ header h1 {
     background-color: var(--secondary-color); 
 }
 .btn:hover {
-    background-color: var(--primary-color)
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
